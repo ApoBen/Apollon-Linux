@@ -194,7 +194,7 @@ nav {
 
 .hero-meta .item { text-align: left; }
 .hero-meta .val { font-size: 0.85rem; font-weight: 700; color: var(--text); letter-spacing: 0.01em; }
-.hero-meta .lbl { font-size: 0.7rem; color: #7a8baa; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-top: 2px; }
+.hero-meta .lbl { font-size: 0.7rem; color: #7a8baa; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 2px; }
 
 /* ---- Divider line ---- */
 .sep {
