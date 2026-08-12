@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apollon Linux — Güvenlik Odaklı İşletim Sistemi</title>
+  <meta name="description" content="Debian 13 tabanlı, güvenlik ve gizlilik odaklı açık kaynaklı Linux dağıtımı.">
+  <link rel="icon" type="image/png" href="apollon-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <img src="apollon-logo.png" alt="Apollon">
+        Apollon Linux
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Özellikler</a></li>
+        <li><a href="#download">İndir</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="#download" class="nav-cta">ISO İndir</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Kararlı Sürüm v1.0
+      </div>
+
+      <h1>Gizliliğiniz için<br>tasarlandı.</h1>
+
+      <p class="lead">
+        Apollon Linux, Debian 13 üzerine inşa edilmiş güvenlik ve gizlilik
+        odaklı bir işletim sistemidir. Tor, AppArmor, LUKS ve Firejail
+        ile dijital hayatınızı korur.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#download" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          ISO İndir
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-ghost">
+          Kaynak Kodu →
+        </a>
+      </div>
+
+      <div class="hero-divider"></div>
+
+      <div class="hero-meta">
+        <div class="item"><div class="val">Debian 13</div><div class="lbl">Taban</div></div>
+        <div class="item"><div class="val">GNOME</div><div class="lbl">Masaüstü</div></div>
+        <div class="item"><div class="val">x86_64</div><div class="lbl">Mimari</div></div>
+        <div class="item"><div class="val">GPLv3</div><div class="lbl">Lisans</div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="features-header reveal">
+      <div class="overline">Güvenlik Katmanları</div>
+      <h2>Her katmanda koruma.</h2>
+      <p>Çekirdekten uygulamaya, ağdan diske — her bileşen güvenlik düşünülerek yapılandırıldı.</p>
+    </div>
+
+    <div class="features-grid reveal">
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Tor Ağı</h3>
+        <p>Tor Browser varsayılan olarak yüklü. Ağ trafiğinizi anonimleştirin, IP adresinizi gizleyin.</p>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>LUKS2 Şifreleme</h3>
+        <p>Kurulumda zorunlu tam disk şifreleme. Bypass edilemez, fiziksel erişime karşı tam koruma.</p>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>AppArmor</h3>
+        <p>Çekirdek düzeyinde zorunlu erişim kontrolü. Uygulama yetkileri sınırlandırılır.</p>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+        </div>
+        <h3>Firejail</h3>
+        <p>Riskli uygulamalar izole sandbox ortamlarında çalıştırılarak sistem bütünlüğü korunur.</p>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Güvenlik Duvarı</h3>
+        <p>UFW/nftables varsayılan aktif. MAC maskeleme ile ağ kimliğiniz gizlenir.</p>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Hardened Kernel</h3>
+        <p>Sıkılaştırılmış boot: init_on_alloc, slab_nomerge, vsyscall=none, page_alloc.shuffle.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- Download -->
+  <section class="download reveal" id="download">
+    <div class="overline">İndirme</div>
+    <h2>Apollon Linux v1.0</h2>
+    <p>Debian 13 tabanlı ISO imajını indirin.<br>USB belleğe yazdırıp hemen kullanmaya başlayın.</p>
+
+    <a href="#" class="dl-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      ISO İndir
+    </a>
+    <div class="dl-file">apollon-linux-1.0-amd64.iso</div>
+    <div class="dl-size">~2.5 GB · Hybrid ISO · SHA256 doğrulamalı</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="apollon-logo.png" alt="">
+        Apollon Linux
+      </div>
+      <ul class="footer-links">
+        <li><a href="#features">Özellikler</a></li>
+        <li><a href="#download">İndir</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+    <p class="footer-copy">© 2026 Apollon Security Project — GPLv3</p>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('active');
+    });
+
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) window.scrollTo({ top: t.offsetTop - 72, behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
